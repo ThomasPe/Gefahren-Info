@@ -1,0 +1,9 @@
+Stoffe:
+<mat-form-field class="example-full-width">
+  <input matInput
+         placeholder="Stoffname, UN-Nummer, Gefahrennummer"
+         [(ngModel)]="query">
+</mat-form-field>
+<ul>
+  <li *ngFor="let stoff of stoffe | search:'unnummer,gefahrnummer,bezeichnung':query">{{stoff.bezeichnung}}</li>
+</ul>
