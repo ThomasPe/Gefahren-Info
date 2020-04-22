@@ -1,22 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatInputModule } from '@angular/material/input';
-
-
 import { GefahrgutRoutingModule } from './gefahrgut-routing.module';
-import { StoffListeComponent } from './stoff-liste/stoff-liste.component';
+import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { SearchPipe } from './search.pipe';
 import { FormsModule } from '@angular/forms';
 
+import { SearchPipe } from './search.pipe';
+import { StofflisteComponent } from './stoffliste/stoffliste.component';
+
 @NgModule({
-  declarations: [StoffListeComponent, SearchPipe],
+  declarations: [StofflisteComponent, SearchPipe],
   imports: [
     CommonModule,
-    GefahrgutRoutingModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    GefahrgutRoutingModule
   ]
 })
 export class GefahrgutModule { }
