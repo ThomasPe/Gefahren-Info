@@ -1,27 +1,61 @@
-# GefahrenInfo
+# Gefahren-Info
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+A Progressive Web App (PWA) for searching UN numbers and hazardous material classes.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- 🔍 Fast search through UN numbers, danger numbers, material names, and hazard classes
+- 📱 Progressive Web App - installable on mobile and desktop
+- ⚡ Built with React, Vite, and Tailwind CSS
+- 🎨 Modern UI with shadcn/ui components
+- 🌐 Works offline after first load
 
-## Code scaffolding
+## Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+- Node.js 20+
+- npm
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Getting Started
 
-## Running unit tests
+```bash
+# Install dependencies
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Start development server
+npm run dev
 
-## Running end-to-end tests
+# Build for production
+npm run build
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Preview production build
+npm run preview
+```
 
-## Further help
+## Deployment
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The app is automatically deployed to GitHub Pages on push to the `main` branch.
+
+Visit the live app at: https://thomaspe.github.io/Gefahren-Info/
+
+## Data
+
+The app uses a dataset of UN numbers (UN-Nummern) containing:
+- UN Number (UN-Nummer)
+- Danger Number (Gefahrnummer)
+- Hazard Class (Gefahrstoffklasse)
+- Material Name (Bezeichnung)
+
+## Tech Stack
+
+- [React](https://react.dev/) - UI Library
+- [Vite](https://vite.dev/) - Build Tool
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [shadcn/ui](https://ui.shadcn.com/) - UI Components
+- [Lucide React](https://lucide.dev/) - Icons
+- [vite-plugin-pwa](https://vite-pwa-org.netlify.app/) - PWA Support
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
